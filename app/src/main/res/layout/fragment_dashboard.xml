@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".ui.richeng.DashboardFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#7fab96c5"
+        app:titleTextColor="?attr/titleColor" />
+    <View
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/myToolbar2"
+        android:background="@drawable/toolbar_shadow">
+    </View>
+
+
+    <CalendarView
+        android:id="@+id/cal_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shadow1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="0dp"
+        android:background="#66f3f3f3"
+        android:clickable="true"
+        android:showWeekNumber="false"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/non_Li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cal_View"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#9966CCCC"
+        android:text="农历日期"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ListView
+        android:id="@+id/lv_Cale"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/non_Li"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="55dp"
+        android:divider="#00000000"
+        android:dividerHeight="8dp" />
+    <!--#00000000代表透明色-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_richeng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="78dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_flag_black_24dp" />
+
+</RelativeLayout>

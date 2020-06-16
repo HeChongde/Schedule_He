@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">日程表</string>
+    <string name="title_home">便签</string>
+    <string name="title_dashboard">日程</string>
+    <string name="title_notifications">课程</string>
+    <string name="title_kch">课程表</string>
+</resources>

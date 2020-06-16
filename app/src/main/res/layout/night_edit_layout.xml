@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/near_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_Toolbar"
+        android:layout_width="match_parent"
+        android:background="#000"
+        app:titleTextColor="#fff"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light">
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/spinner"
+            android:paddingRight="20dp"
+            android:paddingLeft="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/edit_level"
+            android:spinnerMode="dropdown" />
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/toolbar_shadow">
+    </View>
+
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_margin="8dp"
+        android:background="@null"
+        android:textColor="#fff"
+        android:textSize="24dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_rc_all"
+        android:icon="@drawable/ic_flag_black_24dp"
+        app:showAsAction="always"
+        android:title="delete" />
+    <item
+        android:id="@+id/rc_delete_all"
+        android:icon="?attr/menu_delete_all"
+        app:showAsAction="always"
+        android:title="delete" />
+</menu>

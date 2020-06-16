@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rc_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    tools:context=".ui.richeng.RC_xiangxiActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/rc_list_Toolbar"
+        android:layout_width="match_parent"
+        android:background="#A09AB4"
+        app:titleTextColor="?attr/titleColor"
+        app:title="日程时间线"
+        android:layout_height="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AlertDialog.AppCompat.Light"
+        />
+    <View
+        android:id="@+id/shadow1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/toolbar_shadow">
+    </View>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"/>
+</LinearLayout>
